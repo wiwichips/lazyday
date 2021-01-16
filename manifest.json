@@ -18,6 +18,10 @@
 		"persistent": true
 	},
 
-  "manifest_version": 2
+  "manifest_version": 2,
+
+  "options_ui": {
+    "page": "settings.html"
+  }
 }
 
