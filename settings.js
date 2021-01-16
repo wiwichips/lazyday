@@ -18,8 +18,10 @@ $(document).ready(() => {
     const form = document.getElementById('informationCenter');
     const firstname = form.ibfirstname.value;
     const middlename = form.ibmiddlename.value;
+    const city = form.ibcity.value;
     console.log(firstname);
     console.log(middlename);
+    console.log(city);
     console.log(form);
   });
 });
