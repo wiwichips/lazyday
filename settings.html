@@ -18,187 +18,189 @@
     crossorigin="anonymous"></script>
   <!-- Custom CSS -->
   <link rel="stylesheet" type="text/css" href="./style.css">
-  <!-- Custom CSS End -->
+  <!-- Load javaScript -->
+  <script src="./settings.js"></script>
+
 </head>
 
-<head>
-        <div class="column">
-    <b>My Information</b>
-  </div>
-		  <p>Legal Name</p>
-          <label>First Name</label>
-          <input type = "text"/>
-		  <label>Middle Name</label>
-          <input type = "text"/>  
-		  <label>Last Name</label>
-          <input type = "text"/>  
-	<br>
-	<br>
-		<p>Address</p>
-		  <label>Address Line 1</label>
-          <input type = "text"/>
-	<br>
-		  <label>City</label>
-          <input type = "text"/> 
-	<br>		  
-		  <label>Province or Territory</label>
-          <input type = "text"/>
-	<br>
-		  <label>Postal Code</label>
-          <input type = "text"/>
-	<br>
-	<br>
-		  
-		 <p>Phone</p>
-		  <label>Country / Territory Phone Code</label>
-          <input type = "text"/>
-	<br>
-		  <label>Phone Number</label>
-          <input type = "text"/> 
-	<br>		  
-		  <label>Phone Extension</label>
-          <input type = "text"/>
-	<br>
-		  
-		  
-  </body>
-  
- <div class="column">
-    <b>Experience</b>
-  </div>
-   <p>Work Experience</p>
-		  <label>Job Title</label>
-          <input type = "text"/>
-	<br>
-		  <label>Company</label>
-          <input type = "text"/> 
-	<br>		  
-		  <label>Location</label>
-          <input type = "text"/>
-	<br>
-         <p>
-          <label>Role Description</label>
-          <textarea> </textarea>
-        </p>
-  
-	<p>Education</p>
-		  <label>School or University</label>
-          <input type = "text"/>
-	<br>
-		  <label>Field of Study</label>
-          <input type = "text"/> 
-	<br>		  
-		  <label>Overall Result (GPA)</label>
-          <input type = "text"/>
-	<br>
-		<p>Certifications</p>
-		<label>Certification</label>
-          <input type = "text"/>
-	<br>
-		  <label>Certification Number</label>
-          <input type = "text"/>
-		  
-		<p>Specialties</p>
-		<label>Specialty</label>
-          <input type = "text"/>
-	<br>
-		<p>
-          <label>Skills (separate by commas)</label>
-          <textarea> </textarea>
-        </p>
-		<p>Resume</p>
-		
-<label for="myfile">Select a file:</label>
-<input type="file" id="myfile" name="myfile">
-
-<p>Websites / Social URLs</p>
-		  <label>LinkedIn</label>
-          <input type = "text"/>
-	<br>
-		  <label>Twitter</label>
-          <input type = "text"/> 
-	<br>		  
-		  <label>Google+</label>
-          <input type = "text"/>
-		  
-	<br> <label>Facebook</label>
-          <input type = "text"/>
-		  
-	<br>
-</html>
-
-
 <body>
-  <br>
-  
+  <form ref='informationCenter' id='informationCenter'>
+    <div class="form-group">
+      <div class="column">
+        <b>My Information</b>
+      </div>
+          <p>Legal Name</p>
+              <label>First Name</label>
+              <input type = "text" id="ibfirstname"/>
+          <label>Middle Name</label>
+              <input type = "text" id="ibmiddlename"/>  
+          <label>Last Name</label>
+              <input type = "text"/>  
+      <br>
+      <br>
+        <p>Address</p>
+          <label>Address Line 1</label>
+              <input type = "text"/>
+      <br>
+          <label>City</label>
+              <input type = "text"/> 
+      <br>		  
+          <label>Province or Territory</label>
+              <input type = "text"/>
+      <br>
+          <label>Postal Code</label>
+              <input type = "text"/>
+      <br>
+      <br>
+          
+        <p>Phone</p>
+          <label>Country / Territory Phone Code</label>
+              <input type = "text"/>
+      <br>
+          <label>Phone Number</label>
+              <input type = "text"/> 
+      <br>		  
+          <label>Phone Extension</label>
+              <input type = "text"/>
+      <br>
+          
+          
+      </body>
+      
+    <div class="column">
+        <b>Experience</b>
+      </div>
+      <p>Work Experience</p>
+          <label>Job Title</label>
+              <input type = "text"/>
+      <br>
+          <label>Company</label>
+              <input type = "text"/> 
+      <br>		  
+          <label>Location</label>
+              <input type = "text"/>
+      <br>
+            <p>
+              <label>Role Description</label>
+              <textarea> </textarea>
+            </p>
+      
+      <p>Education</p>
+          <label>School or University</label>
+              <input type = "text"/>
+      <br>
+          <label>Field of Study</label>
+              <input type = "text"/> 
+      <br>		  
+          <label>Overall Result (GPA)</label>
+              <input type = "text"/>
+      <br>
+        <p>Certifications</p>
+        <label>Certification</label>
+              <input type = "text"/>
+      <br>
+          <label>Certification Number</label>
+              <input type = "text"/>
+          
+        <p>Specialties</p>
+        <label>Specialty</label>
+              <input type = "text"/>
+      <br>
+        <p>
+              <label>Skills (separate by commas)</label>
+              <textarea> </textarea>
+            </p>
+        <p>Resume</p>
+        
+    <label for="myfile">Select a file:</label>
+    <input type="file" id="myfile" name="myfile">
 
-  <br> 
-  
-  <div class="column">
-    <b>Application Questions</b>
-  </div class="row expanded">
-  
-  <div class="column">
-    <label>Would you consider relocating for this role? 
-      <select id="zygpv8-form" name="Degree.tempdefault" data-settings-field="">
-        <option label="Relocation not required">Relocation not required</option>
-        <option label="Yes, I would consider reocating for this role">Yes, I would consider reocating for this role</option>
-        <option label="No, I am not able to relocate for this role">No, I am not able to relocate for this role</option>
-      </select>
-    </label>
+    <p>Websites / Social URLs</p>
+          <label>LinkedIn</label>
+              <input type = "text"/>
+      <br>
+          <label>Twitter</label>
+              <input type = "text"/> 
+      <br>		  
+          <label>Google+</label>
+              <input type = "text"/>
+          
+      <br> <label>Facebook</label>
+              <input type = "text"/>
+          
+      <br>
+      <br>
+      
+
+      <br> 
+      
+      <div class="column">
+        <b>Application Questions</b>
+      </div class="row expanded">
+      
+      <div class="column">
+        <label>Would you consider relocating for this role? 
+          <select id="zygpv8-form" name="Degree.tempdefault" data-settings-field="">
+            <option label="Relocation not required">Relocation not required</option>
+            <option label="Yes, I would consider reocating for this role">Yes, I would consider reocating for this role</option>
+            <option label="No, I am not able to relocate for this role">No, I am not able to relocate for this role</option>
+          </select>
+        </label>
+      </div>
+
+      <div class="column">
+        <label>Are you subject to any non-compete or non-solicitation restrictions at your current or most recent employer?
+          <select id="zygpv8-form" name="Degree.tempdefault" data-settings-field="">
+            <option label="Yes"</option><option label="No"></option>
+          </select>
+        </label>
+      </div>
+
+      <div class="column">
+        <label>Are you authorized to work in the country where you are applying?
+          <select id="zygpv8-form"name="Degree.tempdefault"data-settings-field="">
+            <option label="Yes"></option>
+            <option label="No"></option>
+          </select>
+        </label>
+      </div>
+
+      <div class="column">
+        <label> Will you now, or in the future, require any form of sponsorship from Workday to maintain work authorization (renewal, permanent residency, etc.)?
+          <select id="zygpv8-form"name="Degree.tempdefault"data-settings-field="">
+            <option label="Yes"</option><option label="No"></option>
+          </select>
+        </label>
+      </div>
+      <br> 
+
+      <div class="column">
+      <b>Voluntary Disclosures</b>
+      </div>
+
+      <br>
+      
+      <div class="column">
+        <b>Veterans Status</b>
+      </div>
+
+      <br>
+      
+      <div class="column">
+        <b>Self Identify</b>
+      </div>
+    <p></p>
+          <label>Name</label>
+              <input type = "text"/>
+      <br>
+          <label>Employee ID</label>
+              <input type = "text"/> 
+      <br>		   
+      
+      <div class="dropdown">
+      <br>
+      
   </div>
-
-  <div class="column">
-    <label>Are you subject to any non-compete or non-solicitation restrictions at your current or most recent employer?
-      <select id="zygpv8-form" name="Degree.tempdefault" data-settings-field="">
-        <option label="Yes"</option><option label="No"></option>
-      </select>
-    </label>
-  </div>
-
-  <div class="column">
-    <label>Are you authorized to work in the country where you are applying?
-      <select id="zygpv8-form"name="Degree.tempdefault"data-settings-field="">
-        <option label="Yes"></option>
-        <option label="No"></option>
-      </select>
-    </label>
-  </div>
-
-  <div class="column">
-    <label> Will you now, or in the future, require any form of sponsorship from Workday to maintain work authorization (renewal, permanent residency, etc.)?
-      <select id="zygpv8-form"name="Degree.tempdefault"data-settings-field="">
-        <option label="Yes"</option><option label="No"></option>
-      </select>
-    </label>
-  </div>
-  <br> 
-
-  <div class="column">
-  <b>Voluntary Disclosures</b>
-  </div>
-
-  <br>
-  
-  <div class="column">
-    <b>Veterans Status</b>
-  </div>
-
-  <br>
-  
-  <div class="column">
-    <b>Self Identify</b>
-  </div>
-<p></p>
-		  <label>Name</label>
-          <input type = "text"/>
-	<br>
-		  <label>Employee ID</label>
-          <input type = "text"/> 
-	<br>		   
-  
-  <div class="dropdown">
-  <br>
-  <button class="dropbtn">Button</button>
-
+  <button type="submit" value="submit-information" class="btn btn-primary">Submit decision</button>
+</form>
 </body>
