@@ -6,14 +6,14 @@ html {
     font-size: 16px;
     background-color: #ffe;
 	color: maroon;
-	font-family: "Times New Roman", Times, serif;
+	font-family: "Helvetica";
 }
 body {
     min-height: 100%;
     line-height: 1.75;
     background-color: #f0e0d6;
 	color: maroon;
-	font-family: "Times New Roman", Times, serif;
+	font-family: "Helvetica";
 }
 a:link:hover {
     -webkit-transition: all 0.3s ease;
@@ -23,7 +23,7 @@ a:link:hover {
     cursor: pointer;
     cursor: hand;
 	color: maroon;
-	font-family: "Times New Roman", Times, serif;
+	font-family: "Helvetica";
 }
 input[type=submit], button {
     cursor: pointer;
@@ -31,15 +31,14 @@ input[type=submit], button {
 	background-color: white;
 	border-color: light grey;
 	color: maroon;
-	font-family: "Times New Roman", Times, serif;
-	
+	font-family: "Helvetica";
 }
 @media(max-width: 900px) {
     html {
         font-size: 14px !important;
         width: 80% !important;
 		color: maroon;
-		font-family: "Times New Roman", Times, serif;
+		font-family: "Helvetica";
     }
 }
 @media(max-width: 480px) {
@@ -47,7 +46,7 @@ input[type=submit], button {
         font-size: 12px !important;
         width: 90% !important;
 		color: maroon;
-		font-family: "Times New Roman", Times, serif;
+		font-family: font-family: "Helvetica";
     }
 }
 @media(max-width: 320px) {
@@ -55,7 +54,7 @@ input[type=submit], button {
         font-size: 12px !important;
         width: 100% !important;
 		color: maroon;
-		font-family: "Times New Roman", Times, serif;
+		font-family: font-family: "Helvetica";
     }
 }
 .scrollit {
@@ -65,3 +64,32 @@ input[type=submit], button {
 img.resize {
   width:200px;
 }
+
+label{
+    display: block;
+    float: left;
+    clear: left;
+    width: 150px;
+    text-align: left;
+}
+input {
+  display: inline-block;
+  float: left;
+}
+
+
+input[type=text]{
+    width:100%;
+    border:2px solid #aaa;
+    border-radius:4px;
+    margin:8px 0;
+    outline:none;
+    padding:8px;
+    box-sizing:border-box;
+    transition:.3s;
+  }
+  
+  input[type=text]:focus{
+    border-color:maroon;
+    box-shadow:0 0 8px 0 maroon;
+  }
