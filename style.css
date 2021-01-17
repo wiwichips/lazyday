@@ -4,15 +4,15 @@ html {
     min-height: 100%;
     margin: 0 auto;
     font-size: 16px;
-    background-color: #ffe;
-	color: maroon;
+    background-color: #f0f1f2;
+	color: #333333;
 	font-family: "Helvetica";
 }
 body {
     min-height: 100%;
     line-height: 1.75;
-    background-color: #f0e0d6;
-	color: maroon;
+    background-color: #f0f1f2;
+	color: #333333;
 	font-family: "Helvetica";
 }
 a:link:hover {
@@ -22,7 +22,7 @@ a:link:hover {
     text-decoration: underline;
     cursor: pointer;
     cursor: hand;
-	color: maroon;
+	color: #333333;
 	font-family: "Helvetica";
 }
 input[type=submit], button {
@@ -30,14 +30,14 @@ input[type=submit], button {
     cursor: hand;
 	background-color: white;
 	border-color: light grey;
-	color: maroon;
+	color: #333333;
 	font-family: "Helvetica";
 }
 @media(max-width: 900px) {
     html {
         font-size: 14px !important;
         width: 80% !important;
-		color: maroon;
+		color: #333333;
 		font-family: "Helvetica";
     }
 }
@@ -45,7 +45,7 @@ input[type=submit], button {
     html {
         font-size: 12px !important;
         width: 90% !important;
-		color: maroon;
+		color: #333333;
 		font-family: font-family: "Helvetica";
     }
 }
@@ -53,7 +53,7 @@ input[type=submit], button {
     html {
         font-size: 12px !important;
         width: 100% !important;
-		color: maroon;
+		color: #333333;
 		font-family: font-family: "Helvetica";
     }
 }
@@ -90,6 +90,18 @@ input[type=text]{
   }
   
   input[type=text]:focus{
-    border-color:maroon;
-    box-shadow:0 0 8px 0 maroon;
+    border-color:#0976e1;
+    box-shadow:0 0 8px 0 #0976e1;
   }
+  
+  #image {
+  height: 159px;
+  width: 1366px;
+  margin-left: 0px;
+  margin-right: 0px;
+}
+#lazyday {
+  background: url(https://i.imgur.com/PXrRxt4.png) no-repeat center  / 1366px 156px;
+  height:156px;
+  width: 1366px;
+}
