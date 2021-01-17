@@ -1,0 +1,16 @@
+
+#lazyday {
+  background: url(https://i.imgur.com/MHGzIZ6.png) no-repeat center  / 150px 90px;
+  height:90px;
+  width: 150px;
+  margin-left: 0px;
+}
+
+body {
+    min-height: 100%;
+    line-height: 1.75;
+    background-color: #005cb9;
+	color: #005cb9;
+	font-family: "Helvetica";
+	margin-left: 10px;
+}
