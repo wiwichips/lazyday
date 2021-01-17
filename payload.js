@@ -1,25 +1,59 @@
 const obj = document.querySelectorAll('input[id^="input-"]');
+const textAreas = document.querySelectorAll('textarea[id^="input-"]');
+
 let str = null;
+let numJobs = 0;
+let numJobTitle = 0;
+let numJobCompa = 0;
+let numJobLocat = 0;
+let numJobDesc = 0;
 
 const exampleUserData = {
   firstname: 'Will',
   middlename: 'Kantor',
   lastname: 'Pringle',
   address: '200 XXX st',
-  city: 'Kingston',
+  city: 'Gwelf',
   postalCode: 'XXXXXX',
   phoneNumber: '3331114444',
   phoneExtension: '',
-  jobTitle: [],
-  jobCompany: [],
-  jobLocation: [],
+  jobTitle: [
+    'Software Developer',
+    'Data Analyst',
+  ],
+  jobCompany: [
+    'Google',
+    'Amazon',
+  ],
+  jobLocation: [
+    'San Fran',
+    'Toronto',
+  ],
+  jobDescription: [
+    'Job Description 1',
+    'Toy Story 2 XXX',
+  ],
   school: 'University of Guelph',
   gpa: '3.68',
   socialWebsite: '',
   socialLinkedIn: 'https://www.linkedin.com/in/will-pringle/',
 }
 
+console.log('======================================');
+console.log(exampleUserData.jobTitle.length);
 console.log(document.title);
+
+numJobs = exampleUserData.jobTitle.length;
+
+for (let j = 0; j < textAreas.length; j++) {
+  str = textAreas[j].outerHTML;
+  str = str.slice(str.indexOf('data-automation-id'), str.length);
+  str = str.slice(str.indexOf('\"') + 1, str.length);
+  str = str.slice(0, str.indexOf('\"'));
+  console.log(str);
+
+  enterUserExperienceData(str, exampleUserData, textAreas[j]);
+}
 
 for (let i = 0; i < obj.length; i++) {
   str = obj[i].outerHTML;
@@ -58,7 +92,7 @@ function enterUserData(type, userData, element) {
   else if (
     type === 'jobTitle' || type === 'company' || type === 'location' 
     ) {
-    console.log('job');
+    enterUserExperienceData(type, userData, element);
   }
   else if (type === 'school') {
     element.value = exampleUserData.school;
@@ -74,6 +108,21 @@ function enterUserData(type, userData, element) {
   }
 }
 
+function enterUserExperienceData(type, userData, element) {
+  if (type === 'jobTitle') {
+    element.value = exampleUserData.jobTitle[numJobTitle];
+    numJobTitle++;
+  } else if (type === 'company') {
+    element.value = exampleUserData.jobCompany[numJobCompa];
+    numJobCompa++;
+  } else if (type === 'location') {
+    element.value = exampleUserData.jobLocation[numJobLocat];
+    numJobLocat++;
+  } else if (type === 'description') {
+    element.value = exampleUserData.jobDescription[numJobDesc];
+    numJobDesc++;
+  }
+}
 
 // send the page title as a  message
 chrome.runtime.sendMessage(document.title);
