@@ -6,7 +6,8 @@
     "tabs",
     "http://*/",
     "https://*/",
-    "storage"
+    "storage",
+    "activeTab"
   ],
 
   "browser_action": {
@@ -15,8 +16,7 @@
   },
 
   "background": {
-		"scripts": ["popup.js"],
-		"persistent": true
+		"scripts": ["popup.js"]
 	},
 
   "manifest_version": 2,
