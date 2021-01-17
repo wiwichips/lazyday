@@ -3,14 +3,6 @@ console.log('hello world from settings.js');
 // Put all onload AJAX calls here, and event listeners
 $(document).ready(() => {
 
-  // listen for login submission
-  $('#submit-button').submit((e) => {
-    e.preventDefault();
-
-    const form = document.getElementById('ib-first-name');
-
-    console.log(form); 
-  });
 
   $('#informationCenter').submit((e) => {
 		e.preventDefault();
@@ -52,11 +44,6 @@ $(document).ready(() => {
 		const name = form.ibname.value;
 		const employeeid = form.ibemployeeid.value;
 		//const  = form.ib.value;
-
-		const jobtitle2 = 'XXX - NOT ASSIGNED TO ANYTHING YET';
-		const company2 = 'XXX - NOT ASSIGNED TO ANYTHING YET';
-		const joblocation2 = 'XXX - NOT ASSIGNED TO ANYTHING YET';
-		const roledescription2 = 'XXX - NOT ASSIGNED TO ANYTHING YET';
 
 		const exampleUserData = {
 			firstname: firstname,
@@ -103,35 +90,13 @@ $(document).ready(() => {
 
 		console.log(name);
 		console.log(employeeid);
-		//console.log();
 	
     console.log(form);
 	});
-	
-	$('#add_button').submit((e) => {
-    e.preventDefault();
-
-    console.log('ADD BUTTON WAS JUST PRESSED');
-  });
-
-
 });
 
-// $(document).ready(function() {
-// 	var max_fields      = 16;
-// 	var wrapper   		= $(".input_fields_wrap");
-// 	var add_button      = $(".add_field_button");
-	
-// 	var x = 0;
-// 	$(add_button).click(function(e){
-// 		e.preventDefault();
-// 		if(x < max_fielfds){ 
-// 			x++ +4; 
-// 			$(wrapper).append('<div><input type="text" name="mytext[]"/><a href="#" class="remove_field ">Remove</a></div>'); 
-// 		}
-// 	});
-	
-// 	$(wrapper).on("click",".remove_field", function(e){ 
-// 		e.preventDefault(); $(this).parent('div').remove(); x--;
-// 	})
-// });
+// function onButtonClicked (){
+//   console.log('btnComment worked');
+// }
+
+// document.getElementById('plzworkbtn').addEventListener('click', onButtonClicked());

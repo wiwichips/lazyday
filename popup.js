@@ -9,7 +9,7 @@ window.addEventListener('load', function (evt) {
 chrome.runtime.onMessage.addListener(function (message) {
 	console.log(message);
 	document.getElementById('pagetitle').innerHTML = message;
-	console.log('hellow orld');
+	console.log('hello world');
 });
 
 function onButtonClicked (){
