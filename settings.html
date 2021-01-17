@@ -23,6 +23,9 @@
 
 </head>
 
+<div id="image">
+  <div id="lazyday"></div>
+</div>
 
 <body>
   <form ref='informationCenter' id='informationCenter'>
@@ -30,7 +33,7 @@
       <div class="column">
         <b>My Information</b>
       </div>
-          <p>Legal Name</p>
+          <p><u>Legal Name</u></p>
               <label>First Name</label>
               <input type = "text" id="ibfirstname" style="font-size:12pt;height:40px;width:200px;"/>
           <label>Middle Name</label>
@@ -43,7 +46,7 @@
 	  <br>
 	  <br>
 	  <br>
-        <p>Address</p>
+        <p><u>Address</u></p>
 
           <label>Address Line 1</label>
               <input type = "text" id="ibaddress" style="font-size:12pt;height:40px;width:200px;"/>
@@ -59,7 +62,7 @@
       <br>
       <br>
       <br><br><br>
-        <p>Phone</p>
+        <p><u>Phone</u></p>
           <label>Country / Territory Phone Code</label>
               <input type = "text" id="ibphonecode" style="font-size:12pt;height:40px;width:200px;"/>
       <br>
@@ -76,7 +79,7 @@
     <div class="column">
         <br><br><br><br><b>Experience</b>
       </div>
-      <p>Work Experience</p>
+      <p><u>Work Experience</u></p>
           <label>Job Title</label>
               <input type = "text" id="ibjobtitle" style="font-size:12pt;height:40px;width:200px;"/>
       <br>
@@ -90,8 +93,8 @@
               <label>Role Description</label>
               <input type = "text" id="ibroledescription" style="font-size:12pt;height:40px;width:200px;"/>
             </p>
-      
-      <p>Education</p>
+      <br><br><br><br><br>
+      <p><u>Education</u></p>
           <label>School or University</label>
               <input type = "text" id="ibschool" style="font-size:12pt;height:40px;width:200px;"/>
       <br>
@@ -101,14 +104,14 @@
           <label>Overall Result (GPA)</label>
               <input type = "text" id="ibgpa" style="font-size:12pt;height:40px;width:200px;"/>
       <br>
-        <p>Certifications</p>
+       <br><br><br> <p><u>Certifications</u></p>
         <label>Certification</label>
               <input type = "text" id="ibcertific" style="font-size:12pt;height:40px;width:200px;"/>
       <br>
           <label>Certification Number</label>
               <input type = "text" id="ibcertificnum" style="font-size:12pt;height:40px;width:200px;"/>
           
-        <p>Specialties</p>
+        <br><br><br><p><u>Specialties</u></p>
         <label>Specialty</label>
               <input type = "text" id="ibspecialty" style="font-size:12pt;height:40px;width:200px;"/>
       <br>
@@ -116,12 +119,12 @@
               <label>Skills (separate by commas)</label>
               <input type = "text" id="ibskills" style="font-size:12pt;height:40px;width:200px;"/>
             </p>
-        <p>Resume</p>
+        <br><br><br><p><u>Resume</u></p>
         
     <label for="myfile">Select a file:</label>
     <input type="file" id="ibresumefile" name="file">
 
-    <p>Websites / Social URLs</p>
+    <br><br><p><u>Websites / Social URLs</u></p>
           <label>LinkedIn</label>
               <input type = "text" id="iblinkedin" style="font-size:12pt;height:40px;width:200px;"/>
       <br>
@@ -140,45 +143,45 @@
 
       <br> 
       
-      <div class="column">
-        <b>Application Questions</b>
+      
+        <br><br><b>Application Questions</b>
       </div class="row expanded">
       
-      <div class="column">
-        <label>Would you consider relocating for this role? 
-          <select id="zygpv8-form" name="Degree.tempdefault" data-settings-field="">
+      
+        <p>Would you consider relocating for this role? 
+          <select>
             <option label="Relocation not required">Relocation not required</option>
             <option label="Yes, I would consider reocating for this role">Yes, I would consider reocating for this role</option>
             <option label="No, I am not able to relocate for this role">No, I am not able to relocate for this role</option>
           </select>
-        </label>
-      </div>
+        </p>
+      
 
-      <div class="column">
-        <label>Are you subject to any non-compete or non-solicitation restrictions at your current or most recent employer?
-          <select id="zygpv8-form" name="Degree.tempdefault" data-settings-field="">
+      
+        <p>Are you subject to any non-compete or non-solicitation restrictions at your current or most recent employer?
+          <select>
             <option label="Yes"</option><option label="No"></option>
           </select>
-        </label>
-      </div>
+        </p>
+     
 
-      <div class="column">
-        <label>Are you authorized to work in the country where you are applying?
-          <select id="zygpv8-form"name="Degree.tempdefault"data-settings-field="">
+      
+        <p>Are you authorized to work in the country where you are applying?
+          <select>
             <option label="Yes"></option>
             <option label="No"></option>
           </select>
-        </label>
-      </div>
+        </p>
+      
 
-      <div class="column">
-        <label> Will you now, or in the future, require any form of sponsorship from Workday to maintain work authorization (renewal, permanent residency, etc.)?
+      
+        <p> Will you now, or in the future, require any form of sponsorship from Workday to maintain work authorization (renewal, permanent residency, etc.)?
           <select id="ddsponsorship">
             <option label="Yes"</option><option label="No"></option>
           </select>
-        </label>
-      </div>
-      <br> 
+        </p>
+      
+       
 
       <div class="column">
      <!-- <b>Voluntary Disclosures</b> </div>
@@ -195,12 +198,13 @@
       <br>
           <label>Employee ID</label>
               <input type = "text" id="ibemployeeid" style="font-size:12pt;height:40px;width:200px;"/> 
-      <br>		   
+      <br><br>	   
       
       <div class="dropdown">
       <br>
-       <br> <br> <br> <br> <br> <br> <br> <br> <br> <br> <br> <br> <br> <br> 
+       <br> <br>
   </div>
   <button type="submit" value="submit-information" class="btn btn-primary">Submit decision</button>
+  <br> <br>
 </form>
 </body>
