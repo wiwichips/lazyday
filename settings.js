@@ -91,7 +91,13 @@ $(document).ready(() => {
 		console.log(name);
 		console.log(employeeid);
 	
-    console.log(form);
+		console.log(form);
+		
+
+		// save the data
+		browser.storage.sync.set({
+			userDataSettings: exampleUserData
+		});
 	});
 });
 

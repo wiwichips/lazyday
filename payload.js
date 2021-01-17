@@ -8,6 +8,21 @@ let numJobCompa = 0;
 let numJobLocat = 0;
 let numJobDesc = 0;
 
+// let exampleUserData = { 
+//   XXX: 'this should not work',
+// };
+
+// var storageItem = browser.storage.managed.get('exampleUserData');
+//   storageItem.then((res) => {
+//     exampleUserData = res.exampleUserData;
+//   });
+
+//   var gettingItem = browser.storage.sync.get('exampleUserData');
+//   gettingItem.then((res) => {
+//     exampleUserData = res.exampleUserData;
+//   });
+
+
 const exampleUserData = {
   firstname: 'Will',
   middlename: 'Kantor',
