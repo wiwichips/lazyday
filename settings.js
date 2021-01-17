@@ -29,13 +29,14 @@ $(document).ready(() => {
 	const jobtitle = form.ibjobtitle.value;
 	const company = form.ibcompany.value;
 	const joblocation = form.ibjoblocation.value;
-	//const roledescription = form.ibroledescription.value;
+	const roledescription = form.ibroledescription.value;
 	const school = form.ibschool.value;
 	const field = form.ibfield.value;
 	const gpa = form.ibgpa.value;
 	const certific = form.ibcertific.value;
 	const certificnum = form.ibcertificnum.value;
 	const specialty = form.ibspecialty.value;
+	const skills = form.ibskills.value;
 	const resumefile = form.ibresumefile.value;
 	const linkedin = form.iblinkedin.value;
 	const twitter = form.ibtwitter.value;
@@ -58,13 +59,14 @@ $(document).ready(() => {
 	console.log(jobtitle);
 	console.log(company);
 	console.log(joblocation);
-	//console.log(roledescription)
+	console.log(roledescription)
 	console.log(school);
 	console.log(field);
 	console.log(gpa);
 	console.log(certific);
 	console.log(certificnum);
 	console.log(specialty);
+	console.log(skills);
 	console.log(resumefile);
 	console.log(linkedin);
 	console.log(twitter);
