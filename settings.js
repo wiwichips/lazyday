@@ -26,10 +26,17 @@ $(document).ready(() => {
 		const phonecode = form.ibphonecode.value;
 		const phonenumber = form.ibphonenumber.value;
 		const phoneext = form.ibphoneext.value;
+		
 		const jobtitle = form.ibjobtitle.value;
 		const company = form.ibcompany.value;
 		const joblocation = form.ibjoblocation.value;
 		const roledescription = form.ibroledescription.value;
+		
+		const jobtitle2 = form.ibjobtitle2.value;
+		const company2 = form.ibcompany2.value;
+		const joblocation2 = form.ibjoblocation2.value;
+		const roledescription2 = form.ibroledescription2.value;
+		
 		const school = form.ibschool.value;
 		const field = form.ibfield.value;
 		const gpa = form.ibgpa.value;
@@ -86,13 +93,14 @@ $(document).ready(() => {
 			specialty: specialty,
 			skills: skills,
 			resumefile: resumefile,
-			socialWebsite: '',
-			socialLinkedIn: linkedin,
+			linkedin: linkedin,
+			twitter: twitter,
+			google: google,
+			facebook: facebook,
+			name: name,
+			employeeid: employeeid,
 		}
 
-		console.log(twitter);
-		console.log(google);
-		console.log(facebook);
 		console.log(name);
 		console.log(employeeid);
 		//console.log();
