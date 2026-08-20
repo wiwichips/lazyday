@@ -21,6 +21,6 @@ Here is a list of job application sites lazyday is currently confirmed to be com
 # Authors
 This project was developed as a submission for <b>Hack the North 2020++</b> by:
 * Will Pringle [@wiwichips](https://github.com/wiwichips "Will Pringle's Github")
-* Jane Teppo [@jatep](https://github.com/jatep "Jane Teppo's Github").
+
 
 # Coming Soon to Firefox and Chrome Extension Store
